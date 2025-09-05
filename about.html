@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Wandering Bean | Our Story</title>
+  <meta name="description" content="Meet the founders, our sourcing philosophy, and the farms that bring each cup to life." />
+  <style>
+    @font-face { font-family: 'Playfair Display'; src: url('/fonts/PlayfairDisplay.woff2') format('woff2'); font-weight: 400 700; font-style: normal; font-display: swap; }
+    @font-face { font-family: 'Montserrat'; src: url('/fonts/Montserrat.woff2') format('woff2'); font-weight: 400 700; font-style: normal; font-display: swap; }
+  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+</head>
+<body class="bg-white text-gray-800" style="font-family: 'Montserrat', sans-serif;">
+  <header class="w-full" style="font-family: 'Playfair Display', serif;">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <span class="text-2xl font-semibold">The Wandering Bean</span>
+      </div>
+      <a href="index.html" class="text-sm uppercase">Home</a>
+    </nav>
+  </header>
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6" aria-label="Our story">
+    <section aria-label="Founder story" class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+      <img src="https://pixabay.com/get/g04b6025203b77e99a4760b6e1fee3c872f026e095122d40b0476c6a6da09d4c9e945cafbaece7886c3606d520279d7cb1b00a5feeca2356ae7d25f4f738c9aaa_640.jpg" alt="Founders sharing a cup" class="w-full h-72 object-cover rounded" />
+      <div>
+        <h1 class="text-3xl font-semibold" style="font-family: 'Playfair Display', serif;">Our Story</h1>
+        <p class="mt-2 text-gray-700">Two friends who traveled through South America, discovering the people and places behind every great cup. Our mission is to connect coffee lovers with origin stories and flavors, ethically sourced and roasted to order.</p>
+      </div>
+    </section>
+
+    <section aria-label="Our sourcing philosophy" class="mt-8">
+      <h2 class="text-2xl font-semibold" style="font-family: 'Playfair Display', serif;">Our Sourcing Philosophy</h2>
+      <p class="mt-2 text-gray-700">We partner with farmers who share our commitment to quality and sustainability. Direct trade, fair prices, and traceable lots ensure you taste the place in every cup.</p>
+    </section>
+
+    <section aria-label="Meet the roasters" class="mt-8">
+      <h2 class="text-2xl font-semibold" style="font-family: 'Playfair Display', serif;">Meet the Roasters</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-4">
+        <article class="bg-white rounded-lg shadow p-4">
+          <img src="https://pixabay.com/get/gaaa597b7e536214a7590b5888256de70225fcc0e5f0a760781d6580f3fa75aa5eb70460f762e43bb66a09f669e9d40068127cd8faf590df4e3bb9cfb13e13913_640.jpg" alt="Roaster portrait" class="w-full h-40 object-cover rounded" />
+          <h3 class="mt-2 font-semibold">Alex Rivera</h3>
+          <p class="text-sm text-gray-600">Roaster & Co-Founding Partner</p>
+        </article>
+        <article class="bg-white rounded-lg shadow p-4">
+          <img src="https://images.pexels.com/photos/5215007/pexels-photo-5215007.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Roaster portrait" class="w-full h-40 object-cover rounded" />
+          <h3 class="mt-2 font-semibold">Priya Kapoor</h3>
+          <p class="text-sm text-gray-600">Head of Sourcing & Quality</p>
+        </article>
+        <article class="bg-white rounded-lg shadow p-4">
+          <img src="https://images.unsplash.com/photo-1650056197378-292c0804ccb4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHwzfHxSb2FzdGVyJTIwMyUyMHBvcnRyYWl0fGVufDB8MHx8fDE3NTcwNzA5ODZ8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Roaster portrait" class="w-full h-40 object-cover rounded" />
+          <h3 class="mt-2 font-semibold">Mason Lee</h3>
+          <p class="text-sm text-gray-600">Flavor & Education Lead</p>
+        </article>
+      </div>
+    </section>
+
+    <section aria-label="Farm map" class="mt-8">
+      <h2 class="text-2xl font-semibold" style="font-family: 'Playfair Display', serif;">Partner Farms</h2>
+      <div class="mt-3 w-full h-72 rounded-lg overflow-hidden" title="Map showing partner farm locations">
+        <img src="https://images.unsplash.com/photo-1724131138554-810b877451b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHw2fHxGYXJtJTIwbG9jYXRpb25zJTIwbWFwfGVufDB8MHx8fDE3NTcwNzA5ODZ8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Map showing partner farm locations" class="w-full h-full object-cover" />
+      </div>
+    </section>
+  </main>
+  <footer class="bg-stone-800 text-gray-300 mt-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 text-sm text-gray-400">&copy; 2025 The Wandering Bean</div>
+  </footer>
+  <script>
+    // Simple map init placeholder (replace with real API implementation)
+    function initMap(){}
+  </script>
+</body>
+</html>
